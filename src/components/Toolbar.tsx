@@ -97,15 +97,15 @@ const Toolbar = () => {
             {headers.map((word, index) => (
           <p
             key={index}
-            className="text-aquamarine slashed-zero font-sans cursor-pointer text-center"
+            className="text-aquamarine slashed-zero font-sans cursor-pointer text-center" onClick={()=>setIsOpen(false)}
           >
             {`0${index + 1}. `}
-            <span className="font-sans  text-lavendar hover:text-aquamarine slashed-zero cursor-pointer text-center">
+            <span  onClick={()=>setIsOpen(false)} className="font-sans  text-lavendar hover:text-aquamarine slashed-zero cursor-pointer text-center">
               {word}
             </span>
           </p>
         ))}
-        <div className="bg-transparent border min-w-52 justify-center border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden">
+        <div  onClick={()=>setIsOpen(false)} className="bg-transparent border min-w-52 justify-center border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden">
           Resume
         </div>
             </div>
