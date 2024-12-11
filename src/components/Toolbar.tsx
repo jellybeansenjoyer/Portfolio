@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Toolbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -40,25 +42,29 @@ const Toolbar = () => {
       }`}
     >
       <div>
-        <p className="text-aquamarine font-sans cursor-pointer">Logo</p>
+        <p className="text-aquamarine font-sans cursor-pointer whitespace-nowrap">
+          Logo
+        </p>
       </div>
 
-      <div className="flex gap-10 slashed-zero items-center">
+      <div className="gap-10 slashed-zero items-center md:flex hidden">
         {headers.map((word, index) => (
           <p
             key={index}
-            className="text-aquamarine slashed-zero font-sans cursor-pointer"
+            className="text-aquamarine slashed-zero font-sans cursor-pointer whitespace-nowrap"
           >
             {`0${index + 1}. `}
-            <span className="font-sans text-lavendar hover:text-aquamarine slashed-zero cursor-pointer">
+            <span className="font-sans whitespace-nowrap text-lavendar hover:text-aquamarine slashed-zero cursor-pointer">
               {word}
             </span>
           </p>
         ))}
-        <div className="bg-transparent border border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer">
+        <div className="bg-transparent border border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden">
           Resume
         </div>
+       
       </div>
+      <FontAwesomeIcon className="md:hidden flex" icon={faBars} width={20} height={20} style={{color:"#5FF5D3"}}/>
     </div>
   );
 };
