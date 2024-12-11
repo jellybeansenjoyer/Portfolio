@@ -48,7 +48,7 @@ const Toolbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full flex items-center justify-between bg-navy px-12 py-5 z-10 shadow-xl transition-transform duration-300 ${
+      className={`min-h-24 fixed top-0 left-0 w-full flex items-center justify-between bg-navy px-12 py-5 z-10 shadow-xl transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
