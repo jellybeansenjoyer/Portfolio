@@ -1,12 +1,23 @@
 "use client";
 import { useState, useEffect } from "react";
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+} from "@/components/ui/drawer";
+import { Button } from "@/components/ui/button";
 
 const Toolbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleDrawer = () => setIsOpen(!isOpen);
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
 
@@ -62,9 +73,32 @@ const Toolbar = () => {
         <div className="bg-transparent border border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden">
           Resume
         </div>
-       
       </div>
-      <FontAwesomeIcon className="md:hidden flex" icon={faBars} width={20} height={20} style={{color:"#5FF5D3"}}/>
+
+      {/* Hamburger icon */}
+      <FontAwesomeIcon
+        className="md:hidden flex cursor-pointer"
+        icon={faBars}
+        width={20}
+        height={20}
+        style={{ color: "#5FF5D3" }}
+        onClick={toggleDrawer}
+      />
+
+      {/* Drawer Component */}
+      <Drawer open={isOpen} onClose={() => setIsOpen(false)}>
+        <DrawerContent className="bg-navy">
+          <DrawerHeader>
+            
+            <DrawerTitle></DrawerTitle>
+          </DrawerHeader>
+          <DrawerFooter>
+            <div className="flex flex-col gap-10">
+                {headers.map((ele,index)=>(<p onClick={()=>setIsOpen(false)}className="uppercase text-aquamarine text-xl cursor-pointer text-center">{ele}</p>))}
+            </div>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
     </div>
   );
 };
