@@ -13,7 +13,7 @@ import {
 const Achievements = () => {
   
   return (
-    <div className="bg-navy relative w-full h-lvh  justify-center items-center content-center inset-0 md:px-40 p-20">
+    <div className="bg-navy relative w-full h-auto  justify-center items-center content-center inset-0 md:px-40 p-20">
       <div className="flex gap-5 items-center">
         <h1 className="text-aquamarine text-xl md:text-2xl font-sans">
           {`03.   `}
@@ -29,7 +29,7 @@ const Achievements = () => {
             <h1 className="font-sans  mt-2 text-aquamarine cursor-pointer">View All</h1>
       </div>
       <Carousel
-  className=" mt-20 mx-auto lg:flex hidden"
+  className=" mt-10 mx-auto lg:flex hidden"
 >
   <CarouselContent className="basis-1/2 flex">
     {achievements.map((ele, index) => (
@@ -42,8 +42,8 @@ const Achievements = () => {
           />
           <div className="group bg-lightnavy rounded-2xl mt-36 -ml-36 p-10 shadow-2xl max-w-96">
           <h1 className="group-hover:text-aquamarine cursor-pointer text-lavendar font-sans text-2xl font-bold mb-2 ">{ele.title}</h1>
-          <h1 className="group-hover:text-aquamarine cursor-pointer text-lavendar font-sans text-justify text-xl">{ele.date+" - "+ele.place}</h1>
-            <h1 className="group-hover:text-aquamarine cursor-pointer text-lavendar font-sans text-justify">{ele.description}</h1>
+          <h1 className="group-hover:text-aquamarine cursor-pointer text-lightslategray mt-2 mb-2 font-sans text-justify text-xl">{ele.date+" - "+ele.place}</h1>
+            <h1 className="group-hover:text-aquamarine cursor-pointer text-lightslategray font-sans text-justify">{ele.description}</h1>
           </div>
         </div>
       </CarouselItem>
@@ -56,9 +56,9 @@ const Achievements = () => {
 <div className="mt-6 gap-4 flex flex-col h-auto">
 {achievements.map((ele, index) => (
     <div key={ele.id} className="flex flex-col gap-4  items-center">
-    <div className="flex-col items-center p-4 rounded-xl lg:hidden bg-lightnavy  gap-5">
+    <div className="flex-col items-center p-4 rounded-xl lg:hidden bg-lightnavy border-2 border-lavendar hover:border-aquamarine gap-5">
         <img
-            className="object-contain rounded-2xl border-2 border-lavendar hover:border-aquamarine cursor-pointer " // Ensures full image view
+            className="object-contain rounded-2xl  cursor-pointer " // Ensures full image view
             src={`${ele.pictures[0]}`}
             alt={`Achievement ${index}`}
           />
