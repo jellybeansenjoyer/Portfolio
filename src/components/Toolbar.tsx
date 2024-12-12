@@ -14,6 +14,12 @@ import {
 import { Button } from "@/components/ui/button";
 
 const Toolbar = () => {
+  const handleScrollBehaviour = () => {
+    window.scrollBy({
+      top: window.innerHeight, // Scroll down by one screen height
+      behavior: "smooth", // Smooth scrolling effect
+    });
+  };  
   const downloadFile = ()=>{
     const link = document.createElement("a");
     link.href = "cv.pdf";
@@ -68,6 +74,7 @@ const Toolbar = () => {
         {headers.map((word, index) => (
           <p
             key={index}
+            onClick={()=>{handleScrollBehaviour()}}
             className="text-aquamarine slashed-zero font-sans cursor-pointer whitespace-nowrap"
           >
             {`0${index + 1}. `}
