@@ -6,6 +6,7 @@ import { faLinkedinIn,faGithub, faXTwitter} from "@fortawesome/free-brands-svg-i
 import Experience from "@/components/Experience";
 import Achievements from "@/components/Achievements";
 import Projects from "@/components/Projects";
+import Contacts from "@/components/Contact";
 export default function Home() {
   const leetcode = (
     <a className="ml-2"  href="https://leetcode.com/u/raghav_kashyap26/">
@@ -37,6 +38,7 @@ export default function Home() {
     <Experience />
     <Achievements />
     <Projects />
+    <Contacts />
     <div className="fixed bottom-0 right-10 gap-2 items-center md:flex hidden flex-col ">
             <h1 className="hover:text-aquamarine cursor-pointer transition-colors duration-300 [writing-mode:vertical-rl] text-lightslategray font-sans text-lg">raghavkash26@gmail.com</h1>
             <div className="w-0.5 h-48 bg-lightslategray" />
@@ -54,12 +56,6 @@ export default function Home() {
             </div>
             <div className="w-0.5 h-48 bg-lightslategray" />
         </div>
-    <div className="h-screen bg-gray-200 flex items-center justify-center">
-        <h1 className="text-3xl">Scroll down for more content</h1>
-      </div>
-      <div className="h-screen bg-gray-300 flex items-center justify-center">
-        <h1 className="text-3xl">Keep scrolling!</h1>
-      </div>
     </div>
   );
 }
