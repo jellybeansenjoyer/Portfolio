@@ -65,7 +65,7 @@ const Toolbar = () => {
             className="text-aquamarine slashed-zero font-sans cursor-pointer whitespace-nowrap"
           >
             {`0${index + 1}. `}
-            <span className="font-sans whitespace-nowrap text-lavendar hover:text-aquamarine slashed-zero cursor-pointer">
+            <span className="font-sans whitespace-nowrap text-lavendar hover:text-aquamarine transition-colors duration-300 slashed-zero cursor-pointer">
               {word}
             </span>
           </p>
@@ -100,7 +100,7 @@ const Toolbar = () => {
             className="text-aquamarine slashed-zero font-sans cursor-pointer text-center" onClick={()=>setIsOpen(false)}
           >
             {`0${index + 1}. `}
-            <span  onClick={()=>setIsOpen(false)} className="font-sans  text-lavendar hover:text-aquamarine slashed-zero cursor-pointer text-center">
+            <span  onClick={()=>setIsOpen(false)} className="font-sans  text-lavendar hover:text-aquamarine transition-colors duration-300 slashed-zero cursor-pointer text-center">
               {word}
             </span>
           </p>

@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
   	extend: {
+		writingMode: {
+			'vertical-rl':'verical-rl',
+		},
   		colors: {
 			aquamarine: '#5FF5D3',
 			navy:'#0A1930',
@@ -63,5 +66,7 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+	require("tailwindcss-animate")
+],
 } satisfies Config;
