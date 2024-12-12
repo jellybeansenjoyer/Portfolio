@@ -14,6 +14,12 @@ import {
 import { Button } from "@/components/ui/button";
 
 const Toolbar = () => {
+  const downloadFile = ()=>{
+    const link = document.createElement("a");
+    link.href = "cv.pdf";
+    link.download="Raghav_Kashyap_CV.pdf"
+    link.click();
+  }
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -70,7 +76,9 @@ const Toolbar = () => {
             </span>
           </p>
         ))}
-        <div className="bg-transparent border border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden">
+        <div onClick={()=>{
+          downloadFile()
+        }} className="bg-transparent border border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden">
           Resume
         </div>
       </div>
@@ -105,7 +113,9 @@ const Toolbar = () => {
             </span>
           </p>
         ))}
-        <div  onClick={()=>setIsOpen(false)} className="bg-transparent border min-w-52 justify-center border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden">
+        <div  onClick={()=>{
+          setIsOpen(false); 
+          downloadFile();}} className="bg-transparent border min-w-52 justify-center border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden">
           Resume
         </div>
             </div>
