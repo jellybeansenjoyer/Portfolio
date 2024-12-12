@@ -16,6 +16,7 @@ export default {
 			aquamarine: '#5FF5D3',
 			navy:'#0A1930',
 			lavendar:'#CCD6F6',
+			lightnavy:'#13274F',
 			lightslategray: "#8892AF",
 			midnightblue:'#112240',
   			background: 'hsl(var(--background))',

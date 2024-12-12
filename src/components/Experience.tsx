@@ -9,7 +9,7 @@ const Experience = () => {
     <div className="bg-navy relative w-full  h-auto flex-col justify-center items-center content-center inset-0 md:px-40 p-20">
       <div className="flex gap-5 items-center">
         <h1 className="text-aquamarine text-xl md:text-2xl font-sans">
-          {`01.   `}
+          {`02.   `}
           <span className="font-bold text-lavendar text-2xl md:text-3xl font-sans">
             Experience
           </span>
