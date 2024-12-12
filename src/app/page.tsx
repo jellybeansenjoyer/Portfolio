@@ -3,7 +3,7 @@ import Hero from '@/components/Hero';
 import About from "@/components/About";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn,faGithub, faXTwitter} from "@fortawesome/free-brands-svg-icons";
-
+import Experience from "@/components/Experience";
 export default function Home() {
   const leetcode = (
     <a href="https://leetcode.com/u/raghav_kashyap26/">
@@ -32,6 +32,7 @@ export default function Home() {
     <Toolbar />
     <Hero />
     <About />
+    <Experience />
     <div className="fixed bottom-0 right-10 gap-2 items-center md:flex hidden flex-col ">
             <h1 className="hover:text-aquamarine cursor-pointer transition-colors duration-300 [writing-mode:vertical-rl] text-lightslategray font-sans text-lg">raghavkash26@gmail.com</h1>
             <div className="w-0.5 h-48 bg-lightslategray" />

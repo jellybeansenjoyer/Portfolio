@@ -46,7 +46,7 @@ const About = () => {
           </div>
           <ul className="grid grid-cols-2 list-disc list-inside">
             {skills.map((ele,index)=>(
-                <li className="text-lightslategray marker:text-blue-50">{ele}</li>
+                <li key={index} className="text-lightslategray marker:text-blue-50">{ele}</li>
             ))}
           </ul>
         </div>
