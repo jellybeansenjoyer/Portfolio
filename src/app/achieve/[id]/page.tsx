@@ -4,17 +4,7 @@ import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import achieve from '@/data/achieve';
 import Toolbar from '@/components/Toolbar';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 
-interface achievewrap {
-  achievement: achieve;
-}
 
 export default function AchievementDetails() {
   const { id } = useParams();
@@ -37,7 +27,7 @@ export default function AchievementDetails() {
           setError(data.error || 'Achievement not found.');
         }
       } catch (err) {
-        setError('An unexpected error occurred.');
+        setError('An unexpected error occurred.'+err);
       }
     };
 
