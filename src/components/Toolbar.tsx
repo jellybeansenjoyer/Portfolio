@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from "next/navigation";
 import {
   Drawer,
   DrawerClose,
@@ -12,6 +13,7 @@ import {
   DrawerTitle,
 } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
+import { Hop } from "lucide-react";
 
 const Toolbar = () => {
   const handleScrollBehaviour = () => {
@@ -26,6 +28,10 @@ const Toolbar = () => {
     link.download="Raghav_Kashyap_CV.pdf"
     link.click();
   }
+  const routeToHome = ()=>{
+      router.push("/")
+  }
+  const router = useRouter()
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -64,7 +70,7 @@ const Toolbar = () => {
         isVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div>
+      <div onClick={()=>{routeToHome()}}>
         <p className="text-aquamarine font-sans cursor-pointer whitespace-nowrap">
           Logo
         </p>
