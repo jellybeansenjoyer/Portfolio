@@ -3,8 +3,12 @@
 
 import { NextResponse } from 'next/server';
 import  achievements  from '@/constants/achievements';
-
-export async function GET(req: Request, { params }: { params: { id: string } }) {
+interface params_ {
+  params: {
+    id: string
+  }
+}
+export async function GET(req: Request, { params }: params_) {
   const { id } = await params;
 
   // Find the achievement by ID
