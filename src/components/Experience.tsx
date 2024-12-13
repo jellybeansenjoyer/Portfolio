@@ -30,6 +30,7 @@ const Experience = () => {
           <h3 className="text-2xl font-sans font-bold ">{ele.title}</h3>
           <h3 className="text-lg font-sans  ">{ele.role}</h3>
           <h3 className="text-lg font-sans  ">{ele.based}</h3>
+          <h3 className="text-md font-sans my-4">{ele.description}</h3>
           <div className="gap-1 flex  flex-wrap">
           {ele.skills.map((skill,index2)=>(
             <p key={index2} className="text-xl border rounded-lg border-aquamarine px-3 py-2 bg-transparent item-center text-center">
