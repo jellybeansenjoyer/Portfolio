@@ -108,7 +108,7 @@ const Toolbar = () => {
         ))}
         <div
           onClick={downloadFile}
-          className="bg-transparent border border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden"
+          className="bg-transparent border hover:bg-aquamarine hover:text-navy border-aquamarine py-2 px-3 text-aquamarine rounded-md font-sans cursor-pointer whitespace-nowrap lg:flex hidden"
         >
           Resume
         </div>

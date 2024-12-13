@@ -5,7 +5,8 @@ interface proj {
     date:string,
     photo:string[],
     skills:string[],
-    video:string[]
+    video:string[],
+    git:string
 }
 
 export default proj

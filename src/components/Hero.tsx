@@ -19,10 +19,11 @@ const Hero = () => {
                     2000
                 ]} speed={10} repeat={Infinity} />
             <h1 className="text-lightslategray mt-4 font-sans text-xl lg:w-1/2 text-justify">I am a 23 year old Developer who loves creating stuff that work on bits. Currently, I am focused on building blockchain D-Apps</h1>
-            <div className="bg-transparent p-4 border border-aquamarine rounded-md cursor-pointer md:max-w-96 max-w-56 mt-16">
-                <h1 className="font-sans  text-aquamarine text-center cursor-pointer">Check out my latest Work!</h1>
+            <a href="https://www.github.com/jellybeansenjoyer">
+            <div className="hover:bg-aquamarine group bg-transparent p-4 border border-aquamarine rounded-md cursor-pointer md:max-w-96 max-w-56 mt-16">
+                <h1 className="font-sans  group-hover:text-navy  text-aquamarine text-center cursor-pointer">Check out my latest Work!</h1>
             </div>
-           
+            </a>
         </div>
        
         </>

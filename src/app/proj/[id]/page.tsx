@@ -63,6 +63,9 @@ export default function AchievementDetails() {
             <h1 className="text-xl text-lightslategray font-sans text-justify">
               {project.description}
             </h1>
+            <a href={project.git}>
+            <h1 className='text-xl text-aquamarine font-sans hover:underline text-justify'>Check Repository</h1>
+            </a>
           </div>
         </div>
       </div>

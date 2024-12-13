@@ -71,16 +71,14 @@ const Projects = () => {
                   size="lg"
                 />
                 <div className="flex gap-2">
-                  <FontAwesomeIcon
-                    icon={faShare}
-                    className="text-gray-500 cursor-pointer"
-                    size="sm"
-                  />
+               
+                  <a href={project.git}>
                   <FontAwesomeIcon
                     icon={faGithub}
                     className="text-gray-500 cursor-pointer"
                     size="sm"
                   />
+                  </a>
                 </div>
               </div>
 
