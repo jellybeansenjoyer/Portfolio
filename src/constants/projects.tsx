@@ -38,8 +38,8 @@ const projects:proj[] = [
       description:
         "A simple Android application that gets the data from the NASA-APOD Api and user gets latest information about what is happening around the Space",
       skills: ["Kotlin", "Coroutines", "Android"],
-      photo:['ns1.jpg'],
-      video:['nsv1.mp4']
+      photo:[],
+      video:['ns1.mp4','nsv1.mp4']
 
     },
     {
@@ -49,7 +49,7 @@ const projects:proj[] = [
         description:'The app keeps users informed about available scholarships and their application details. Users can easily apply for scholarships and track their application status in real-time through the app. The Seeker App simplifies the scholarship application process, offering a seamless experience to its users.',
         skills:['Kotlin','Coroutines','Android','MongoDb','Express','Node','React','RestAPI'],
         photo:['sk1.jpg','sk2.jpg','sk3.jpg','sk4.jpg','sk5.jpg','sk6.jpg','sk7.jpg'],
-        video:['skwv1.mp4','skv1.mp4','skv2.mp4']
+        video:['skvwv1.mp4','skv1.mp4','skv2.mp4']
     },
     {
         id:6,
