@@ -19,7 +19,7 @@ const Projects = () => {
           <h1 className="text-aquamarine text-xl md:text-2xl font-sans">
             {`04. `}
             <span className="font-bold text-lavendar text-2xl md:text-3xl">
-              Cool Things I've Made
+              Cool Things I have Made
             </span>
           </h1>
           <div className="bg-gray-700 h-0.5 flex-1" />

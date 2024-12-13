@@ -32,7 +32,7 @@ export default function AchievementDetails() {
           setError(data.error || 'Project not found.');
         }
       } catch (err) {
-        setError('An unexpected error occurred.');
+        setError('An unexpected error occurred.'+err);
       }
     };
 

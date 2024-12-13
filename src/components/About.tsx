@@ -41,14 +41,14 @@ const About = () => {
               platform development.
             </div>
             <div className="text-lightslategray text-xl font-sans text-justify mt-5">
-              Fast Forward to today, I've had the privilege of working at an
+              Fast Forward to today, I havve had the privilege of working at an
               esteemed organization,{" "}
               <span className="text-aquamarine">Ellucian</span> which is a top
               leader in Education. My main focus is to build Scalable, Highly
               Performant Applications.
             </div>
             <div className="text-lightslategray text-xl font-sans text-justify mt-5">
-              Here are a few technologies I've been working with recently:
+              Here are a few technologies I have been working with recently:
             </div>
             <ul className="grid grid-cols-2 list-disc list-inside">
               {skills.map((ele, index) => (
