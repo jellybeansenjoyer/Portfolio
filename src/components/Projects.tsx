@@ -10,33 +10,7 @@ const Projects = () => {
   const routeToProject = (id:string) => {
     router.push(`/proj/${id}`)
   }
-  // const projects = [
-  //   {
-  //     title: "Decentralized Event Ticketing Platform",
-  //     description:
-  //       "A decentralised web based platform for secure booking of tickets, solving the problem of FCFS queue wait",
-  //     skills: ["NextJs", "Solidity", "TailwindCSS", "Metamask", "MongoDb"],
-  //   },
-  //   {
-  //     title: "JustTalk",
-  //     description:
-  //       "JustTalk is a beautifully designed Android chat app that allows users to chat with friends and family in real-time, anytime, anywhere.",
-  //     skills: ["Android", "Kotlin", "Firebase", "Coroutines"],
-  //   },
-  //   {
-  //     title: "Sentimental Analysis of Consumer Behaviour",
-  //     description:
-  //       "A P.W.W that shows the sellers insights about Consumer by analysing reviews, tech details, by scraping through the web and giving meaningful suggestions via text-generation",
-  //     skills: ["React", "BeautifulSoup", "Selenium", "Flask", "TailwindCSS", "Tensorflow"],
-  //   },
-  //   {
-  //     title: "NASA APOD",
-  //     description:
-  //       "A simple Android application that gets the data from the NASA-APOD Api and user gets latest information about what is happening around the Space",
-  //     skills: ["Kotlin", "Coroutines", "Android"],
-  //   },
-  // ];
-
+ 
   return (
     <div className="bg-navy relative w-full h-auto flex justify-center items-center px-20 py-20 md:px-40 ">
       <div className="w-full">
