@@ -50,7 +50,7 @@ export default function AchievementDetails() {
   return (
 <div className="flex relative flex-col scrollbar-thin">
   <Toolbar />
-  <div className="bg-navy w-full h-screen flex justify-center items-center mt-10 inset-0 md:px-40 p-20">
+  <div className="bg-navy w-full h-auto flex justify-center items-center mt-10 inset-0 md:px-40 p-20">
     <div className="flex lg:flex-row flex-col w-full gap-20">
       {/* Left Section with Text */}
       <div className="flex flex-col gap-4 w-full lg:w-1/2">
