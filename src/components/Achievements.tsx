@@ -1,9 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import achievements from "@/constants/achievements";
 import { useRouter } from "next/navigation";
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,

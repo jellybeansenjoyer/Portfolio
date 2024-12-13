@@ -1,7 +1,5 @@
 "use client"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TypeAnimation } from "react-type-animation";
-import { faLinkedinIn,faGithub, faXTwitter} from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
     

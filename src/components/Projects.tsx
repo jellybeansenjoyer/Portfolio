@@ -1,9 +1,7 @@
 "use client";
 
-import { Description } from "@radix-ui/react-dialog";
-import Image from "next/image";
-import { faFolder, faShare } from "@fortawesome/free-solid-svg-icons";
-import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faFolder } from "@fortawesome/free-solid-svg-icons";
+import {  faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import projects from "@/constants/projects";
 import { useRouter } from "next/navigation";
