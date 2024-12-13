@@ -3,13 +3,13 @@
 
 import { NextResponse } from 'next/server';
 import  achievements  from '@/constants/achievements';
-interface params_ {
-  params: {
-    id: string
-  }
-}
-export async function GET(req: Request, { params }: params_) {
-  const { id } = await params;
+// interface params_ {
+//   params: {
+//     id: string
+//   }
+// }
+export async function GET(req, params ) {
+  const { id } = await params.params;
 
   // Find the achievement by ID
   const achievement = achievements.find((item) => item.id === Number(id));

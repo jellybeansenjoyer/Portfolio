@@ -2,8 +2,8 @@
 
 import { NextResponse } from 'next/server';
 import projects from '@/constants/projects';
-export async function GET(req: Request, { params }: { params: { id: string } }) {
-  const { id } = await params;
+export async function GET(req,  params) {
+  const { id } = await params.params;
 
   // Find the achievement by ID
   const project = projects.find((item) => item.id === Number(id));
