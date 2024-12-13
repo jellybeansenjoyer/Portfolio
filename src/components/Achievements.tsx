@@ -59,7 +59,7 @@ const Achievements = () => {
 </Carousel>
 <div className="mt-6 gap-4 flex flex-col h-auto">
 {achievements.map((ele, index) => (
-    <div key={ele.id} className="flex flex-col gap-4  items-center">
+    <div key={ele.id} className="flex flex-col gap-4  items-center" onClick={()=>{handleNavigation(ele.id.toString())}}>
     <div className="flex-col items-center p-4 rounded-xl lg:hidden bg-lightnavy border-2 border-lavendar hover:border-aquamarine gap-5">
         <img
             className="object-contain rounded-2xl  cursor-pointer " // Ensures full image view
