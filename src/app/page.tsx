@@ -1,3 +1,4 @@
+"use client"
 import Toolbar from "@/components/Toolbar";
 import Hero from '@/components/Hero';
 import About from "@/components/About";
@@ -30,6 +31,13 @@ export default function Home() {
             link:"https://x.com/raghavdevboi"
         }
     ]
+    const email = "your_email@example.com";
+    const subject = "Hello Raghav";
+    const body = "I wanted to discuss something important with you.";
+  
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
   return (
     <div className="flex relative flex-col scrollbar-thin">
     <Toolbar />
@@ -40,7 +48,7 @@ export default function Home() {
     <Projects />
     <Contacts />
     <div className="fixed bottom-0 right-10 gap-2 items-center md:flex hidden flex-col ">
-            <h1 className="hover:text-aquamarine cursor-pointer transition-colors duration-300 [writing-mode:vertical-rl] text-lightslategray font-sans text-lg">raghavkash26@gmail.com</h1>
+            <h1 className="hover:text-aquamarine cursor-pointer transition-colors duration-300 [writing-mode:vertical-rl] text-lightslategray font-sans text-lg" onClick={()=>{window.location.href = mailtoLink}}>raghavkash26@gmail.com</h1>
             <div className="w-0.5 h-48 bg-lightslategray" />
         </div>
 

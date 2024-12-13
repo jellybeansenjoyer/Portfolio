@@ -25,7 +25,7 @@ const achievements:achieve[] = [
         title:'Ellucian Internal Hackathon Runner Up',
         date:"June 2024",
         place:"Bengaluru, Karnataka",
-        pictures:["eih1.jpg"],
+        pictures:["eih1.jpg","eih2.jpg"],
         description:"A React-based web app that enhances student mental well-being through decentralized private video consultations and smart contract-enabled appointment management on the Polygon network.The features are MetaMask authentication,decentralized video conferencing, AI-driven post-session analysis.The project facilitates secure, private mental health consultations for students, enabling therapists to provide personalized carethrough decentralized video sessions and smart contract management.", video:"null",
         github:"https://github.com/jellybeansenjoyer/"
     },
