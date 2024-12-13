@@ -39,7 +39,7 @@ export default function Home() {
       subject
     )}&body=${encodeURIComponent(body)}`;
   return (
-    <div className="flex relative flex-col scrollbar-thin">
+    <div className="flex relative flex-col scrollbar-thin w-full">
     <Toolbar />
     <Hero />
     <About />

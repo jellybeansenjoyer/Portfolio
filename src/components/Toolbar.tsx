@@ -10,6 +10,7 @@ import {
   DrawerContent,
   DrawerFooter,
   DrawerHeader,
+  DrawerTitle,
 } from "@/components/ui/drawer";
 
 const Toolbar = () => {
@@ -126,7 +127,9 @@ const Toolbar = () => {
       {/* Drawer Component */}
       <Drawer open={isOpen} onClose={() => setIsOpen(false)}>
         <DrawerContent className="bg-navy">
-          <DrawerHeader></DrawerHeader>
+          <DrawerHeader>
+            <DrawerTitle className="hidden"></DrawerTitle>
+          </DrawerHeader>
           <DrawerFooter>
             <div className="flex flex-col gap-10 items-center justify-center">
               {headers.map((word, index) => (

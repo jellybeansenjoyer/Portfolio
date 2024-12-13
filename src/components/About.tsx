@@ -62,7 +62,7 @@ const About = () => {
             </ul>
           </div>
           <div
-            className="relative mt-10 lg:mt-0 group w-96 h-96 cursor-pointer"
+            className="relative mt-10 lg:mt-0 group  cursor-pointer"
             onClick={() => setModalOpen(true)}
           >
             <Image
@@ -70,9 +70,9 @@ const About = () => {
               width={384}
               height={384}
               src="/raghav2.jpg"
-              className="rounded-lg object-cover transform group-hover:scale-110 transition-transform duration-300"
+              className="rounded-lg w-[200px] h-[200px] md:h-[384px] md:w-[384px] object-cover transform group-hover:scale-110 transition-transform duration-300"
             />
-            <div className="absolute inset-0 bg-aquamarine opacity-50 group-hover:opacity-0 transition-opacity duration-300 rounded-lg"></div>
+            {/* <div className="absolute inset-0 bg-aquamarine opacity-50 group-hover:opacity-0 transition-opacity duration-300 rounded-lg"></div> */}
           </div>
         </div>
       </div>

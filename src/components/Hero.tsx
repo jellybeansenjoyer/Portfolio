@@ -5,7 +5,7 @@ const Hero = () => {
     
     return (
         <>
-        <div className="bg-navy w-full h-screen justify-center items-center content-center mt-10 inset-0 md:px-40 p-20">
+        <div className="bg-navy w-full h-auto justify-center items-center content-center mt-10 inset-0 md:px-40 p-20">
             <h1 className="text-aquamarine font-sans text-xl"> Hi, my name is</h1>
             <h1 className="text-lavendar md:text-7xl text-3xl font-bold font-sans mt-6">Raghav Kashyap.</h1>
             <TypeAnimation className="text-lightslategray md:text-7xl font-bold font-sans mt-14 text-3xl" sequence={[
