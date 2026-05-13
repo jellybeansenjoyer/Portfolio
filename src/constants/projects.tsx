@@ -1,17 +1,6 @@
 import proj from '@/data/proj'
 const projects:proj[] = [
     {
-        id:1,
-        date:'December 2024',
-        title: "Decentralized Event Ticketing Platform",
-        description:
-        "A decentralised web based platform for secure booking of tickets, solving the problem of FCFS queue wait",
-        skills: ["NextJs", "Solidity", "TailwindCSS", "Metamask", "MongoDb"],
-        photo:[],
-        video:[],
-        git:'https://github.com/jellybeansenjoyer/Show-Booking-App'
-    },
-    {
         id:2,
         title: "JustTalk",
         date:'May 2022',
@@ -65,6 +54,47 @@ const projects:proj[] = [
         photo:['eih1.jpg','eih2.jpg'],
         video:['eihv1.mp4'],
         git:'http://github.com/jellybeansenjoyer'
+    },
+    {
+        id:7,
+        title:'AeroStream - Real-Time F1 Telemetry Platform',
+        date:'Apr 2026 - May 2026',
+        description:'Built a production-shaped event streaming platform to process Formula 1 telemetry in real time. Delivered a 3-broker Kafka KRaft setup (RF=3, ISR=2 posture), simulated 20 cars at 10,000+ events/sec, enforced Avro schema governance with BACKWARD compatibility, enriched live events via Kafka Streams + Debezium CDC from PostgreSQL (10 circuits, 20 drivers), added ksqlDB windowed analytics (30s hopping / 10s advance), and deployed a Python ML consumer for pit-stop predictions with health/readiness/Prometheus metrics.',
+        skills:['Kafka','Kafka Streams','Debezium','ksqlDB','Spring Boot','Java 21','Python','FastAPI','scikit-learn','PostgreSQL','Avro','Schema Registry','Prometheus','Grafana','Docker'],
+        photo:[],
+        photoSections:[
+            {
+                title:'Architecture',
+                photo:['proj-aerostream/aerostream-architecture.png'],
+            },
+            {
+                title:'Metrics - Prometheus / Grafana',
+                photo:[
+                    'proj-aerostream/metrics/graph_for_graphana.png',
+                    'proj-aerostream/metrics/graph_prometheus.png',
+                    'proj-aerostream/metrics/graphana_connectivity.png',
+                    'proj-aerostream/metrics/graphana_dashboard.png',
+                    'proj-aerostream/metrics/ml_consumer_metrics.png',
+                    'proj-aerostream/metrics/query_graphana.png',
+                    'proj-aerostream/metrics/targets.png',
+                ],
+            },
+            {
+                title:'Dashboard Section',
+                photo:[
+                    'proj-aerostream/dashboard/db-01.png',
+                    'proj-aerostream/dashboard/db-02.png',
+                    'proj-aerostream/dashboard/db-03.png',
+                    'proj-aerostream/dashboard/db-04.png',
+                    'proj-aerostream/dashboard/db-05.png',
+                    'proj-aerostream/dashboard/db-06.png',
+                    'proj-aerostream/dashboard/db-07.png',
+                    'proj-aerostream/dashboard/db-08.png',
+                ],
+            },
+        ],
+        video:[],
+        git:'https://github.com/jellybeansenjoyer/Aerostream'
     }
 ]
 

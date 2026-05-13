@@ -63,9 +63,18 @@ export default function AchievementDetails() {
             <h1 className="text-xl text-lightslategray font-sans text-justify">
               {project.description}
             </h1>
-            <a href={project.git}>
-            <h1 className='text-xl text-aquamarine font-sans hover:underline text-justify'>Check Repository</h1>
+            <a href={project.git} target="_blank" rel="noreferrer">
+              <h1 className='text-xl text-aquamarine font-sans hover:underline text-justify'>Check Repository</h1>
             </a>
+            {project.links && project.links.length > 0 && (
+              <div className="flex flex-col gap-2 mt-2">
+                {project.links.map((link, index) => (
+                  <a key={index} href={link.url} target="_blank" rel="noreferrer">
+                    <h1 className='text-lg text-aquamarine font-sans hover:underline text-justify'>{link.label}</h1>
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -87,6 +96,27 @@ export default function AchievementDetails() {
      </div>
      
       )}
+
+      {project.photoSections && project.photoSections.length > 0 && project.photoSections.map((section, sectionIndex) => (
+        <div key={section.title} className="bg-navy w-full h-auto flex flex-col md:px-40 p-20 border-t border-white/10">
+          <h1 className="text-2xl text-aquamarine font-sans mb-4 font-bold">{section.title}</h1>
+          <div className="md:grid flex flex-col lg:grid-cols-3 grid-cols-2 gap-4">
+            {section.photo.map((item, index) => (
+              <img
+                key={`${sectionIndex}-${index}`}
+                className={
+                  section.photo.length === 1
+                    ? 'object-contain w-full max-h-[min(70vh,640px)] min-h-[240px] rounded-lg cursor-pointer bg-white/5 p-2 hover:opacity-95 transition-opacity'
+                    : 'object-cover w-full h-[300px] max-w-[500px] rounded-lg cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out hover:z-10'
+                }
+                src={`../${item}`}
+                alt={`${section.title} — ${index + 1}`}
+                onClick={() => setSelectedPhoto(`../${item}`)}
+              />
+            ))}
+          </div>
+        </div>
+      ))}
 
       {selectedPhoto && (
         <div className="fixed inset-0 bg-transparent/80 flex justify-center items-center z-50">
