@@ -95,6 +95,52 @@ const projects:proj[] = [
         ],
         video:[],
         git:'https://github.com/jellybeansenjoyer/Aerostream'
+    },
+    {
+        id:8,
+        title:'Order Timeline & Late Consumer Replay',
+        date:'October 2026',
+        description:'Fraud and support need the full history of an order, not a single status column. Checkout writes keyed events to a Kafka topic, and a support service rebuilds each timeline by consuming that log. A fraud scorer can join later with its own consumer group, replay from the earliest offset, and score orders that already happened — without changing checkout.',
+        skills:['Kafka','KRaft','Python','FastAPI','React','Docker'],
+        photo:[],
+        photoSections:[
+            {
+                title:'Support timeline',
+                fit:'contain',
+                photo:[
+                    'proj-order-timeline/order-created.png',
+                    'proj-order-timeline/order-timeline.png',
+                    'proj-order-timeline/sample-orders.png',
+                ],
+            },
+            {
+                title:'Late fraud consumer',
+                fit:'contain',
+                photo:[
+                    'proj-order-timeline/fraud-off.png',
+                    'proj-order-timeline/fraud-scores.png',
+                    'proj-order-timeline/fraud-detail.png',
+                    'proj-order-timeline/order-flags.png',
+                ],
+            },
+            {
+                title:'Replay from the log',
+                fit:'contain',
+                photo:[
+                    'proj-order-timeline/replay.png',
+                ],
+            },
+            {
+                title:'Kafka topic',
+                fit:'contain',
+                photo:[
+                    'proj-order-timeline/kafka-topics.png',
+                    'proj-order-timeline/kafka-messages.png',
+                ],
+            },
+        ],
+        video:['proj-order-timeline/walkthrough.mp4'],
+        git:'https://github.com/jellybeansenjoyer/order-history-kafka'
     }
 ]
 

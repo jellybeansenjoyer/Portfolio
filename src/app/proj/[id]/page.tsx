@@ -100,12 +100,12 @@ export default function AchievementDetails() {
       {project.photoSections && project.photoSections.length > 0 && project.photoSections.map((section, sectionIndex) => (
         <div key={section.title} className="bg-navy w-full h-auto flex flex-col md:px-40 p-20 border-t border-white/10">
           <h1 className="text-2xl text-aquamarine font-sans mb-4 font-bold">{section.title}</h1>
-          <div className="md:grid flex flex-col lg:grid-cols-3 grid-cols-2 gap-4">
+          <div className={`md:grid flex flex-col gap-4 ${section.fit === 'contain' ? 'lg:grid-cols-2 grid-cols-1' : 'lg:grid-cols-3 grid-cols-2'}`}>
             {section.photo.map((item, index) => (
               <img
                 key={`${sectionIndex}-${index}`}
                 className={
-                  section.photo.length === 1
+                  section.fit === 'contain' || section.photo.length === 1
                     ? 'object-contain w-full max-h-[min(70vh,640px)] min-h-[240px] rounded-lg cursor-pointer bg-white/5 p-2 hover:opacity-95 transition-opacity'
                     : 'object-cover w-full h-[300px] max-w-[500px] rounded-lg cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out hover:z-10'
                 }

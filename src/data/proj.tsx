@@ -6,6 +6,8 @@ interface ProjectLink {
 export interface ProjectPhotoSection {
     title: string,
     photo: string[]
+    /** `contain` keeps full screenshots visible. Default crops to a fixed tile. */
+    fit?: 'contain' | 'cover'
 }
 
 interface proj {
